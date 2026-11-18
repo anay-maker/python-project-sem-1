@@ -4,7 +4,6 @@ records = []
 
 
 def find_record(roll):
-    """Return the record with the given roll number, or None."""
     for rec in records:
         if rec["roll"] == roll:
             return rec
@@ -12,7 +11,6 @@ def find_record(roll):
 
 
 def read_roll(text):
-    """Convert text to an int roll number; return None if invalid."""
     try:
         return int(text)
     except ValueError:
@@ -20,7 +18,6 @@ def read_roll(text):
 
 
 def read_marks(text):
-    """Convert text to int marks; return None if not a number."""
     try:
         return int(text)
     except ValueError:
